@@ -12,7 +12,6 @@ public class HelloController {
     public Message hello(@RequestParam(value = "name") String name) {
         //ここに処理を記述
         String message = "こんにちは。" + name + "さん！";
-
         //Messageクラスのインスタンスを作成し、messageをセットする
         Message msg = new Message(message);
         return msg;
